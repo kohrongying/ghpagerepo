@@ -1,0 +1,77 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+# Note that _config.yml changes are loaded at compile time, not runtime. 
+# This means that if you’re running jekyll serve locally and you edit _config.yml, then changes to it won’t be detected. 
+# You’ll need to kill and rerun jekyll serve.
+
+# Site settings
+title: Site Under Construction
+email: kohrongying@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: rongzx
+github_username:  kohrongying
+linkedin_username: rongyingkoh
+instagram_username: kickrongying
+pinterest_username: kohrongying
+facebook_username: rongying.koh 
+
+# Build settings
+markdown: kramdown
+
+#collections
+collections:
+- chapalang
+
+collections:
+  chapalang:
+    output: true
+    permalink: /chapalang/:path/  	
+
+sass:
+    sass_dir: _assets/stylesheets
+    style: compressed
+#for new folders 
+# include: ['_pages']
+# relative_permalinks: false
+
+# permalink:     '/blog/:year/:title/'
+# paginate_path: '/blog/page:num/'
+# paginate:      2
+
+excerpt_separator: "<!-- more -->"
+
+gems: 
+  - jekyll-contentblocks
+  - jekyll-assets
+
+assets:
+  autowrite: true
+  cache: false
+  cache_type: filesystem
+  skip_baseurl_with_cdn: false
+  skip_prefix_with_cdn: false
+  prefix: "/assets"
+  digest: true
+
+  prefix: "/assets"
+  digest: true
+  assets:
+    - "*.png"
+    - "bundle.css"
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+  autoprefixer:
+    browsers: ["last 2 versions","> 5%","IE 9"]
+
+repository: kohrongying/kohrongying.github.io

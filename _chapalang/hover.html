@@ -1,0 +1,146 @@
+---
+layout: workspace
+title: Hover Effects
+overview: Ho-ho-ho, yes Christmas came early this year
+---
+{% contentfor scripts %}
+    <!-- each page's unique css -->
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.3.0/balloon.min.css">
+
+    {% stylesheet expt %}
+    {% javascript chapalang/flexbox.scripts %}
+
+{% endcontentfor%}
+
+<section>
+  <div class="container">
+    <div class="row v-h-center">
+      <div class="hover100"> Yay more!</div>
+
+    </div>
+  </div>
+</div>
+
+<section> 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card card-y">
+          <div class="front">
+            <span class="card__text">front</span>
+          </div>
+          <div class="back">
+            <span class="card__text">back</span>
+          </div>
+        </div><!-- /card -->
+      </div>
+      <div class="col-md-3">
+        <div class="card card-y">
+          <div class="front">
+            <span class="card__text">front with added perspective</span>
+          </div>
+          <div class="back">
+            <span class="card__text">back</span>
+          </div>
+        </div><!-- /card -->
+      </div>
+      <div class="col-md-3">
+        <div class="card card-x">
+          <div class="front">
+            <span class="card__text">front</span>
+          </div>
+          <div class="back">
+            <span class="card__text">back</span>
+          </div>
+        </div><!-- /card -->
+      </div>
+      <div class="col-md-3">
+        <div class="card card-x">
+          <div class="front">
+            <span class="card__text">front</span>
+          </div>
+          <div class="back">
+            <span class="card__text">back</span>
+          </div>
+        </div><!-- /card -->
+      </div>
+    </div> <!-- /row -->
+
+    <div class="row">
+      <h3>Flipping Cards</h3>
+      <p>So the first two is flipped on the Y axis and the last two is flipped on the X axis <br/>
+      <a href="http://callmenick.com/post/css-transitions-transforms-animations-flipping-card" target="_blank">Credits</a></p>
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+</section>
+
+<section class="bg-grey">
+  <div class="container">
+    <div class="row" style="display:flex;justify-content:space-between;">
+
+    <!--   <div class="col-md-3">
+        <div class="hover1">Hover Me</div>
+      </div>
+      <div class="col-md-3">
+        <div class="hover2">Eh don't be biased</div>
+      </div>
+      <div class="col-md-3">
+        <div class="hover3">Show some LOVE</div>
+      </div>
+      <div class="col-md-3">
+        <div class="hover4">No more ideas</div>
+      </div> -->
+
+      
+        <div class="hover1">Hover Me</div>
+      
+        <div class="hover2">Eh don't be biased</div>
+      
+        <div class="hover3">Show some LOVE</div>
+      
+        <div class="hover4">Go INSIDE</div>
+
+        <div class="hover5">Underline</div>
+     
+    </div> <!-- end of div row -->
+
+    <div class="row">
+      <h3>Button Hover Effects</h3>
+      <p>31/5: So today was spent experimenting with buttons and hover effect. And the star of today's show was box-shadow. It was responsible for the sliding up/down/left/right effect as well as literally the shadow. Please ignore the colour combis.. was just having fun hehe<br/>
+      <a href="http://bradsknutson.com/blog/css-button-with-sliding-background-color/" target="_blank">Credits </a>
+      <a href="http://callmenick.com/post/simple-css3-transitions-transforms-animations-compilation" target="_blank"> More Credits</a></p>
+    </div> <!-- end of div row -->
+
+  </div><!--  end of div container -->
+</section>
+
+<section>
+	<div class='container'>
+		<div class='row'>
+		  <div class="col-md-3">
+            <div class="shake bg-shake">shake me</div>
+          </div>
+          
+          <div class="col-md-3">
+            <div class="shake-hard bg-shake">shake HARD</div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="shake-crazy bg-shake">shake CRAZY</div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="shake-vertical bg-shake">shake VERTICAL</div>
+          </div>
+
+		</div>
+		<div class="row">
+          <h3>CSShake</h3>
+          <p>14/7: So this is an awesome CSS Library. It is so fun!!<br />
+            <a href="https://elrumordelaluz.github.io/csshake/" target="_blank">Check it out!</a> </p>
+        </div>
+
+	</div>
+</section>

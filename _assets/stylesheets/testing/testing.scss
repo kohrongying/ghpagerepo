@@ -1,0 +1,262 @@
+@import "bootstrap";
+
+html {
+	overflow-x: hidden;
+}
+
+h1,h2,h3 {
+	font-family:'Oswald';
+	text-align: left;
+	text-transform: uppercase;
+}
+
+p {
+	font-family: 'OpenSansBold', sans-serif;
+	text-align: left;
+	margin-top:10px;
+}
+
+.container, .container-fluid {
+	padding-top:15px;
+	padding-bottom: 15px;
+}
+
+.three-columns {
+	background-color: red;
+}
+
+.three-columns p {
+	color:blue;
+}
+
+.bg-blue {
+	background-color: #003d7c;
+}
+
+.bg-orange {
+	background-color: #ef7c00;
+}
+
+.bg-grey {
+	background-color: #efefef;
+}
+
+/*start of parallax*/
+.container {
+	text-align: center;
+}
+
+.parallax {
+	height:200px;
+	background-size:cover; /*forces the background image to occupy the total available space by expanding it proportionally*/
+	background-attachment: fixed; /*fixes the bakcground while content scrolls past it*/
+	background-repeat:no-repeat; /*not really necessary*/
+}
+
+#bg-1{ background-image: url(asset_path("testing/bg1.jpg"));
+}
+
+#bg-2{ background-image:url(asset_path("testing/bg2.jpg"))}
+
+#bg-3{ background-image:url(asset_path("testing/bg3.jpg"))}
+
+/*Class to Vertically Center Text*/
+.vcenter {
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
+.parallax .container h1{
+	color: rgba(255,255,255,0.5);
+	font-size:70px;
+	font-weight:100;
+	text-shadow:0 0 10px rgba(0,0,0,0.5);
+	text-transform:uppercase;
+}
+
+.content{
+	height:200px;
+}
+/*end of parallax*/
+
+.button_custom {
+    padding: 15px 20px;
+    margin: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+}
+
+.bg-shake {
+	color:white;
+	background:#003d7c;
+}
+
+.hover1 {
+	color: #FFF;
+    background: #e3d016; /*mustard*/
+    box-shadow: inset 0 0 0 0 #8cb256; /*green*/
+}
+
+.hover1:hover { /*left to right*/
+    box-shadow: inset 400px 0 0 0 #8cb256; /*green*/
+}
+
+.hover2 {
+	color: #7df9ff; /*blue*/
+    background: #343434; /*grey*/
+    box-shadow: inset 0 0 0 0 #7df9ff;
+}
+
+.hover2:hover { /*down to up*/
+    box-shadow: inset 0 -100px 0 0 #7df9ff; /*blue*/
+    color:#343434; /*grey*/;
+}
+
+.hover3 { 
+	color: #EF672F; /*orange text*/
+    background: white;
+    border: 2px solid #EF672F; /*orange*/
+    box-shadow: none;
+}
+
+.hover3:hover { /*shadow appears*/
+	color: white; /*orange*/
+    background: #EF672F;
+    box-shadow: 6px 6px black; 
+}
+
+.fa-hand-spock-o {
+	size:10px;
+}
+
+.hover4 {
+	color:#EF672F;
+	border: 2px solid #EF672F; /*orange*/
+}
+
+.hover4:hover { /*shadow appears*/
+	color: white; /*orange*/
+    background: #EF672F;
+    
+}
+.grow { 
+	color: #FFF;
+    background: #e3d016; /*mustard*/
+	transition: all .2s ease-in-out; 
+}
+.grow:hover { 
+	transform: scaleX(1.2); 
+}
+
+/*end of button hover*/
+
+#bg-4{ background-image:url(asset_path("testing/bg4.jpg"));background-size:cover;}
+#bg-5{ background-image:url(asset_path("testing/bg5.jpg"));background-size:cover; }
+#bg-6{ background-image:url(asset_path("testing/bg6.jpg"));background-size:cover;}
+
+.image-container {
+	height:200px;
+	position:relative;
+	background-size:cover;
+}
+
+.image-container .overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	text-align: center;
+	opacity:0;
+	-webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+}
+
+.image-container .overlay span {
+	line-height:30px;
+	font-weight:100;
+	font-size:32px;
+	color:white;
+
+	/*done to vertical align text*/
+	position: relative;
+ 	top: 45%;
+  	transform: translateY(-45%);
+}
+
+.image-container:hover .overlay{
+   opacity:1;
+   background: rgba(0,0,0,.6); /*black overlay*/
+}
+
+.image-container:hover #overlay-4{
+   opacity:1;
+   background: rgba(255,0,0,.6); /*black overlay*/
+}
+/* end of Subpage Image Headings - with hover darken effect */
+
+.btn-press {
+  color: #fff;
+  background-color: #6496c8;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px #27496d;
+  font-size:24px;
+}
+
+.btn-press:hover{
+  background-color: #417cb8
+}
+
+.btn-press:active {
+  background-color: #417cb8;
+  box-shadow: 0 5px #27496d;
+  transform: translateY(5px);
+}
+
+.blue{
+	width:50px;
+	height: 50px;
+	position: relative;
+	background-color: blue;
+}
+
+h1.title-custom {
+	font:80px 'Oswald';
+	color:rgba(0,0,0,0.5);
+	position:relative;
+	text-align:left;
+}
+
+h1.title-custom:after {
+	content:'HELLO YOU ADORABLE IDIOTS';
+	position: absolute; left:5px; top:5px;
+	color:rgba(0,255,0,0.8);/*green*/
+}
+
+.mp-1 {
+	background-image: url(asset_path("testing/cactusbg2.png"));
+	background-size:cover;
+	height:300px;
+}
+
+.mp-2 {
+	background-image: url(asset_path("testing/cactusbg4.png"));
+	background-size:cover;
+	height:300px;
+}
+
+.multi-parallax,.multi-parallax-2 {
+	/*padding: 240px 0;*/
+	background-position: 0 0;
+}

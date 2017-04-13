@@ -1,0 +1,35 @@
+@import "bootstrap";
+
+body, html {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.bg { 
+    /* The image used */
+	background-image: url(asset_path("homebg1.jpeg"));
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caption {
+	text-align: center;
+		
+	span.border {
+	    background-color: #111;
+	    color: #fff;
+	    padding: 18px;
+	    font-size: 25px;
+	    letter-spacing: 10px;
+	}
+}

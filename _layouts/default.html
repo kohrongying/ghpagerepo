@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+    {% contentblock scripts %}
+  </head>
+  <body>
+
+    {% include header.html %}
+    {% contentblock freedom %}
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+    {% include footer.html %}
+
+  </body>
+
+</html>
