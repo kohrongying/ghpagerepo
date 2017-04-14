@@ -1,11 +1,117 @@
 ---
 title: Portfolio
 permalink: /portfolio/
-layout: default
+layout: bare
 ---
-{% contentfor freedom %}
-	<div class="container">
-	<h1>Hello World</h1>
-	<button class="btn btn-primary">press me</button>
-	</div>
+{% contentfor scripts %}
+    {% stylesheet portfolio %}
 {% endcontentfor %}
+
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#aboutme">About</a></li>
+            <li><a href="#contact">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<button class="btn btn-primary">testing</button>
+<section id="hello">
+	<div class="bg">
+		<h1 class="title-custom">HELLO</h1>
+		<br>
+		<!-- <h1 class="title-custom">My Name is Rong Ying.</h1> -->
+	</div>
+</section>
+
+<section id="aboutme">
+	<div class="container">
+		<div class="row section-heading">
+			<h1>About Me</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<img src="http://placehold.it/350x150">
+			</div>
+			<div class="col-md-6">
+				Lorem Ipsum 
+			</div>		
+		</div>
+	</div>
+</section>
+
+<section id="skills">
+	<div class="container">
+		<div class="row section-heading">
+			<h1>Skills</h1>
+		</div>
+		<div class="row">
+			Lorem Ipsum
+		</div>
+	</div>
+</section>
+
+<section id="projects">
+	<div class="container">
+		<div class="row section-heading">
+			<h1>Projects</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<img src="http://placehold.it/350x150">
+			</div>
+			<div class="col-md-4">
+				<img src="http://placehold.it/350x150">
+			</div>
+			<div class="col-md-4">
+				<img src="http://placehold.it/350x150">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="resume">
+	<div class="container">
+		<div class="row section-heading">
+			<h1>Download Resume</h1>
+		</div>
+	</div>
+</section>
+
+<section id="interests">
+	<div class="container">
+		<div class="row section-heading">
+			<h1>Interests</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<img src="http://placehold.it/350x150">
+			</div>
+			<div class="col-md-6">
+				<img src="http://placehold.it/350x150">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="contact">
+	<div class="container">
+		<div class="row section-heading">
+			<h1>Contact Me</h1>
+		</div>
+	</div>
+</section>

@@ -55,7 +55,6 @@ gems:
 
 assets:
   autowrite: true
-  cache: false
   cache_type: filesystem
   skip_baseurl_with_cdn: false
   skip_prefix_with_cdn: false

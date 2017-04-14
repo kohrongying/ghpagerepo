@@ -1,0 +1,54 @@
+@import "bootstrap";
+
+$teal:#2fc6bf;
+$orange:#eaaa2a;
+$grey:#6e7271;
+
+
+.bg {
+	background-image: url(asset_path("homebg1.jpeg"));
+	/* Full height */
+    height: 500px; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#skills,#aboutme,#projects,#resume,#interests,#contact {
+	padding-top:80px;
+	padding-bottom:80px;
+}
+
+section#skills {
+	background-color: $teal;
+}
+
+section#resume,#contact {
+	background-color: $grey;
+}
+
+.section-heading {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h1.title-custom {
+	font-size:80px;
+	font-weight:700;
+	color:white;
+	position:relative;
+	text-align:left;
+}
+
+h1.title-custom:after {
+	content:'HELLO';
+	position: absolute; left:5px; top:5px;
+	color:$grey;
+}
