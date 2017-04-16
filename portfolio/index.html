@@ -29,27 +29,29 @@ layout: bare
       </div>
     </nav>
 
-<button class="btn btn-primary">testing</button>
-<section id="hello">
+<div id="hello">
 	<div class="bg">
 		<h1 class="title-custom">HELLO</h1>
 		<br>
 		<!-- <h1 class="title-custom">My Name is Rong Ying.</h1> -->
 	</div>
-</section>
+</div>
 
 <section id="aboutme">
 	<div class="container">
 		<div class="row section-heading">
-			<h1>About Me</h1>
+			<span>About Me</span>
 		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<img src="http://placehold.it/350x150">
-			</div>
-			<div class="col-md-6">
-				Lorem Ipsum 
-			</div>		
+		<div class="row education">
+			<img src="{% asset_path portfolio/education.png %}" alt="Alexey V Zapparov" />
+		</div>
+	</div>
+</section>
+
+<section id="workexperience">
+	<div class="container">
+		<div class="row section-heading">
+			<span>Work Experience</span>
 		</div>
 	</div>
 </section>
@@ -57,7 +59,7 @@ layout: bare
 <section id="skills">
 	<div class="container">
 		<div class="row section-heading">
-			<h1>Skills</h1>
+			<span>Skills</span>
 		</div>
 		<div class="row">
 			Lorem Ipsum
@@ -68,7 +70,7 @@ layout: bare
 <section id="projects">
 	<div class="container">
 		<div class="row section-heading">
-			<h1>Projects</h1>
+			<span>Projects</span>
 		</div>
 		<div class="row">
 			<div class="col-md-4">
@@ -87,7 +89,7 @@ layout: bare
 <section id="resume">
 	<div class="container">
 		<div class="row section-heading">
-			<h1>Download Resume</h1>
+			<span>Download Resume</span>
 		</div>
 	</div>
 </section>
@@ -95,7 +97,7 @@ layout: bare
 <section id="interests">
 	<div class="container">
 		<div class="row section-heading">
-			<h1>Interests</h1>
+			<span>Interests</span>
 		</div>
 		<div class="row">
 			<div class="col-md-6">
@@ -111,7 +113,7 @@ layout: bare
 <section id="contact">
 	<div class="container">
 		<div class="row section-heading">
-			<h1>Contact Me</h1>
+			<span>Contact Me</span>
 		</div>
 	</div>
 </section>

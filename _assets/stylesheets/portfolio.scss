@@ -4,6 +4,20 @@ $teal:#2fc6bf;
 $orange:#eaaa2a;
 $grey:#6e7271;
 
+@mixin dfadf ($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin header-style($color) {
+	border-left: 15px solid $color;
+	padding-left: 15px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 40px;
+}
 
 .bg {
 	background-image: url(asset_path("homebg1.jpeg"));
@@ -20,23 +34,34 @@ $grey:#6e7271;
     align-items: center;
 }
 
-section#skills,#aboutme,#projects,#resume,#interests,#contact {
+.section-heading {
+	padding-bottom: 30px;
+
+	span {
+		@include header-style($teal);
+	}
+}
+
+section {
 	padding-top:80px;
+}
+
+section#skills,#projects,#resume,#contact,#workexperience,#interests {
 	padding-bottom:80px;
 }
 
 section#skills {
 	background-color: $teal;
+	
+	.section-heading span {
+		@include header-style(white);
+	}
+
 }
 
-section#resume,#contact {
+section#resume,#contact,#workexperience {
 	background-color: $grey;
-}
-
-.section-heading {
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	text-align: center;
+	color: white;
 }
 
 h1.title-custom {
@@ -51,4 +76,9 @@ h1.title-custom:after {
 	content:'HELLO';
 	position: absolute; left:5px; top:5px;
 	color:$grey;
+}
+
+.education {
+	padding-top: 80px;
+	width: 100%;
 }
