@@ -16,13 +16,13 @@ $grey:#6e7271;
 	padding-left: 15px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	font-size: 40px;
+	font-size: 30px;
 }
 
 .bg {
 	background-image: url(asset_path("homebg1.jpeg"));
 	/* Full height */
-    height: 500px; 
+    height: 100vh; 
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -35,22 +35,32 @@ $grey:#6e7271;
 }
 
 .section-heading {
-	padding-bottom: 30px;
+	padding-top: 80px;
+	padding-bottom: 50px;
 
 	span {
 		@include header-style($teal);
 	}
 }
 
-section {
-	padding-top:80px;
+// section#skills,#projects,#resume,#contact,#aboutme,#interests {
+// 	padding-top:80px;
+// }
+section#projects,#interests {
+	padding-bottom: 80px;
 }
+section#resume {
+	padding: 100px;
+	text-align: center;
+	font-size: 30px;
 
-section#skills,#projects,#resume,#contact,#workexperience,#interests {
-	padding-bottom:80px;
+	a {
+		color: white;
+	}
 }
 
 section#skills {
+	padding-bottom:80px;
 	background-color: $teal;
 	
 	.section-heading span {
@@ -81,4 +91,15 @@ h1.title-custom:after {
 .education {
 	padding-top: 80px;
 	width: 100%;
+}
+
+.work {
+	padding-bottom: 80px;
+}
+
+section#skills .myskills{
+	background-image: url(asset_path("portfolio/cubes.png"));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }

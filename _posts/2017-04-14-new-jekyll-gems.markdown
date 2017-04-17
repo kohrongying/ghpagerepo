@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "New Collections"
+title:  "New Jekyll Gems"
 date:   2017-04-14
 ---
-It has been eons since I've touched this... Shamefully, I am back, even though I should have been back to edit this earlier haha. School after internship last year was pretty busy with entre and ML, but this term was much more breathable. 
+It has been eons since I've touched this... Shamefully, I am back, even though I should have been back to edit this earlier haha. School after internship last year was pretty busy with <!-- more --> entre and ML, but this term was much more breathable. 
 
 So upon coming back. Did some major changes which included:
 - Having a proper `Gemfile`
