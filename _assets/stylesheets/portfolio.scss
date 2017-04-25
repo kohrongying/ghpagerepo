@@ -1,5 +1,3 @@
-@import "bootstrap";
-
 $teal:#2fc6bf;
 $orange:#eaaa2a;
 $grey:#6e7271;
@@ -46,9 +44,10 @@ $grey:#6e7271;
 // section#skills,#projects,#resume,#contact,#aboutme,#interests {
 // 	padding-top:80px;
 // }
-section#projects,#interests {
+section#projects {
 	padding-bottom: 80px;
 }
+
 section#resume {
 	padding: 100px;
 	text-align: center;
@@ -102,4 +101,26 @@ section#skills .myskills{
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+section#interests {
+	background-image: url(asset_path("portfolio/img2.jpg"));
+	padding: 80px;
+	box-shadow:inset 0 0 0 200px rgba(0,0,150,0.3);
+
+	.interests-heading h1{
+		color:white;
+		font-size: 56px;
+	}
+
+	a {
+		margin-top: 20px;
+	}
+}
+
+.parallax {
+	height:400px;
+	background-size:cover; /*forces the background image to occupy the total available space by expanding it proportionally*/
+	background-attachment: fixed; /*fixes the bakcground while content scrolls past it*/
+	background-repeat:no-repeat; /*not really necessary*/
 }
