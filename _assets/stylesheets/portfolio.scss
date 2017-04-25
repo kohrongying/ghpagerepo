@@ -2,11 +2,8 @@ $teal:#2fc6bf;
 $orange:#eaaa2a;
 $grey:#6e7271;
 
-@mixin dfadf ($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
+html {
+	overflow-x:hidden;
 }
 
 @mixin header-style($color) {
@@ -15,6 +12,45 @@ $grey:#6e7271;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	font-size: 30px;
+}
+
+@mixin makesmaller() {
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.hover6 { 
+    position: relative; 
+    color: white; 
+    background: transparent; 
+    padding: 15px 20px; 
+    font-size: 14px; 
+    letter-spacing: 1px; 
+    text-align: center; 
+    cursor: pointer; 
+    -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; transition: all ease 0.3s; 
+
+	&:after { 
+	    display: block; 
+	    position: absolute; 
+	    left: 0; 
+	    bottom: 2px; 
+	    width: 0; 
+	    height: 2px; 
+	    background-color: white; 
+	    content: ""; transition: width 0.2s; 
+	}
+}
+
+.hover6:hover { 
+    color: white; 
+
+	&:after { 
+	    width: 100%;
+	}
 }
 
 .bg {
@@ -30,6 +66,102 @@ $grey:#6e7271;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*Header*/
+
+header {
+    width: 100%;
+    // height: 150px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: $grey;
+    @include makesmaller();
+    
+    span#logo {
+    	@include makesmaller();
+	    display: inline-block;
+	    height: 120px;
+	    line-height: 120px;
+	    float: left;
+	    font-family: "Oswald", sans-serif;
+	    font-size: 40px;
+	    color: white;
+	    font-weight: 400;
+	}
+	nav {
+	    display: inline-block;
+	    float: right;
+
+	    a {
+	    	@include makesmaller();
+	    	line-height: 120px;
+		    margin-left: 20px;
+		    color: white;
+		    font-weight: 700;
+		    font-size: 18px;
+		    &:hover {
+		    	text-decoration:none;
+		    }
+		    &:visited {
+		    	color:white;
+		    }
+	    }
+	}
+}
+
+header.smaller {
+	background:black;
+    height: 70px;
+
+    span#logo {
+    	width: 150px;
+	    height: 70px;
+	    line-height: 70px;
+	    font-size: 30px;
+    }
+    nav a {
+	    line-height: 70px;
+	}
+}
+
+@media all and (max-width: 660px) {
+    header span#logo {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+    }
+    header nav {
+        display: block;
+        float: none;
+        height: 50px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    header nav a {
+        line-height: 50px;
+        margin: 0 10px;
+    }
+    header.smaller {
+        height: 75px;
+    }
+    header.smaller span#logo {
+        height: 40px;
+        line-height: 40px;
+        font-size: 30px;
+    }
+    header.smaller nav {
+        height: 35px;
+    }
+    header.smaller nav a {
+        line-height: 35px;
+    }
 }
 
 .section-heading {
@@ -56,16 +188,6 @@ section#resume {
 	a {
 		color: white;
 	}
-}
-
-section#skills {
-	padding-bottom:80px;
-	background-color: $teal;
-	
-	.section-heading span {
-		@include header-style(white);
-	}
-
 }
 
 section#resume,#contact,#workexperience {
@@ -96,11 +218,22 @@ h1.title-custom:after {
 	padding-bottom: 80px;
 }
 
-section#skills .myskills{
-	background-image: url(asset_path("portfolio/cubes.png"));
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+section#skills {
+	padding-bottom:80px;
+	background-color: $teal;
+	
+	.section-heading {
+		padding-bottom:0;
+		span {
+			@include header-style(white);
+		}
+	}
+	.myskills{
+		background-image: url(asset_path("portfolio/cubes.png"));
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: contain;
+	}
 }
 
 section#interests {
@@ -115,6 +248,7 @@ section#interests {
 
 	a {
 		margin-top: 20px;
+		text-decoration: none;
 	}
 }
 
@@ -123,4 +257,27 @@ section#interests {
 	background-size:cover; /*forces the background image to occupy the total available space by expanding it proportionally*/
 	background-attachment: fixed; /*fixes the bakcground while content scrolls past it*/
 	background-repeat:no-repeat; /*not really necessary*/
+}
+
+.fa {
+    padding: 20px;
+    width: 80px;
+    color: white;
+}
+
+.fa-github:hover {
+	background-color: black;
+}
+.fa-linkedin:hover {
+	background-color:#3395C3;
+}
+.fa-envelope-o:hover {
+	background-color: red;
+}
+
+section#contact {
+	.icons {
+		display: flex;
+		justify-content: flex-end;
+	}
 }

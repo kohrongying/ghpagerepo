@@ -52,9 +52,14 @@ body {
     position: absolute;
     top: 0;
     width: 250px;
+    height:100%;
     margin: 0;
     padding: 0;
     list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .sidebar-nav li {
@@ -66,9 +71,7 @@ body {
 }
 
 .sidebar-nav > .sidebar-brand {
-    height: 65px;
-    font-size: 18px;
-    line-height: 60px;
+
 }
 
 @media(min-width:768px) {
