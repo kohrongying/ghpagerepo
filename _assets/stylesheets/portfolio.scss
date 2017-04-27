@@ -87,10 +87,7 @@ header {
 	    height: 120px;
 	    line-height: 120px;
 	    float: left;
-	    font-family: "Oswald", sans-serif;
-	    font-size: 40px;
-	    color: white;
-	    font-weight: 400;
+	    width: 30%;
 	}
 	nav {
 	    display: inline-block;
@@ -118,10 +115,10 @@ header.smaller {
     height: 70px;
 
     span#logo {
-    	width: 150px;
+    	width: 15%;
 	    height: 70px;
 	    line-height: 70px;
-	    font-size: 30px;
+	    
     }
     nav a {
 	    line-height: 70px;

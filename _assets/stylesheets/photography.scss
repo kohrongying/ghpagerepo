@@ -60,18 +60,34 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .sidebar-nav li {
-	padding:20px;
-    color: #999999;
-    h4,p {
-    	text-align: center;
+    color: white;
+    width: inherit;
+    text-align: center;
+    h5{
+    	font-size: 14px;
+    }
+    p {
+    	font-size: 12px;
     }
 }
 
 .sidebar-nav > .sidebar-brand {
+	width: 60%;
+}
 
+.pagination-sm > li > a {
+	background: none;
+	color: white;
+	border: none;
+
+	&:hover {
+		background: white;
+		color: black;
+	}
 }
 
 @media(min-width:768px) {
