@@ -12,11 +12,13 @@ So upon coming back. Did some major changes which included:
 `jekyll-contentblocks` is really helpful. It is basically I don't even know how to explain. 
 In `_layouts/`, `default.html`:
 
+
 ```
 {% contentblock scripts %}
 ```
 
 Then in your html file that uses the default layout, you can just use:
+
 
 ```
 {% contentfor scripts %}

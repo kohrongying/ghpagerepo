@@ -5,6 +5,8 @@ layout: bare
 ---
 {% contentfor scripts %}
     {% stylesheet photography %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.js"></script>
 {% endcontentfor %}
 
 <div id="wrapper" class="toggled">
@@ -13,7 +15,7 @@ layout: bare
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <img src="{% asset_path rong-logo.png %}" alt="EducationBackground" />
+                    <img src="{% asset_path rong-logo.png %}" alt="Image" />
                 </li>
                 <li>
 
@@ -54,7 +56,7 @@ layout: bare
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
-        	<div class="page-content-wrapper">
+        	<!-- <div class="page-content-wrapper"> -->
 <!--             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
@@ -62,25 +64,129 @@ layout: bare
                     </div>
                 </div>
             </div> -->
-	          <div class="one">One</div>
-			  <div class="two">Two</div>
-			  <div class="three">Three</div>
-			  <div class="four">Four</div>
-			  <div class="five">Five</div>
-			  <div class="six">Six</div>
+            	<div class="masonry">
+				   <div class="item">
+					   <a href="{% asset_path photog/1.jpg %}" data-toggle="lightbox" data-gallery="example-gallery">
+					     <img src="{% asset_path photog/1.jpg %}" alt="Image" />
+			      	   </a>
+				   </div>
+				   <div class="item">
+					   <a href="{% asset_path photog/2.JPG %}" data-toggle="lightbox" data-gallery="example-gallery">
+					     <img src="{% asset_path photog/2.JPG %}" alt="Image" />
+					   </a>
+				   </div>
+				   <div class="item">
+					   <a href="{% asset_path photog/3.jpg %}" data-toggle="lightbox" data-gallery="example-gallery">
+					     <img src="{% asset_path photog/3.jpg %}" alt="Image" />
+					   </a>
+					</div>
+
+				   <div class="item">
+					   <a href="{% asset_path photog/4.JPG %}" data-toggle="lightbox" data-gallery="example-gallery">
+					     <img src="{% asset_path photog/4.JPG %}" alt="Image" />
+					   </a>
+					   </div>
+				   <div class="item">
+					   <a href="{% asset_path photog/5.jpg %}" data-toggle="lightbox" data-gallery="example-gallery">
+					     <img src="{% asset_path photog/5.jpg %}" alt="Image" />
+					   </a>
+					   </div>
+				   <div class="item">
+					   <a href="{% asset_path photog/6.JPG %}" data-toggle="lightbox" data-gallery="example-gallery">
+					     <img src="{% asset_path photog/6.JPG %}" alt="Image" />
+					   </a>
+					   </div>
+				   <div class="item">
+					   <a href="{% asset_path photog/7.jpg %}" data-toggle="lightbox" data-gallery="example-gallery">
+					     <img src="{% asset_path photog/7.jpg %}" alt="Image" />
+					   </a>
+					   </div>				   				   
+
+				   <div class="item">
+					   <a href="{% asset_path photog/8.JPG %}" data-toggle="lightbox" data-gallery="example-gallery">
+					     <img src="{% asset_path photog/8.JPG %}" alt="Image" />
+					   </a>
+					   </div>
+				   <div class="item">
+					   <a href="{% asset_path photog/9.jpg %}" data-toggle="lightbox" data-gallery="example-gallery">
+					     <img src="{% asset_path photog/9.jpg %}" alt="Image" />
+					   </a>
+					   </div>
+				   <div class="item">
+					   <a href="{% asset_path photog/10.JPG %}" data-toggle="lightbox" data-gallery="example-gallery">
+					     <img src="{% asset_path photog/10.JPG %}" alt="Image" />
+					   </a>
+					   </div>
+				   <div class="item">
+					   <a href="{% asset_path photog/11.JPG %}" data-toggle="lightbox" data-gallery="example-gallery">
+					     <img src="{% asset_path photog/11.JPG %}" alt="Image" />
+					   </a>
+					   </div>
+				   <div class="item">
+					   <a href="{% asset_path photog/12.JPG %}" data-toggle="lightbox" data-gallery="example-gallery">
+					     <img src="{% asset_path photog/12.JPG %}" alt="Image" />
+					   </a>
+					   </div>
+				   <div class="item">
+					   <a href="{% asset_path photog/13.JPG %}" data-toggle="lightbox" data-gallery="example-gallery">
+					     <img src="{% asset_path photog/13.JPG %}" alt="Image" />
+					   </a>
+					   </div>
+				   <div class="item">
+					   <a href="{% asset_path photog/15.JPG %}" data-toggle="lightbox" data-gallery="example-gallery">
+					     <img src="{% asset_path photog/15.JPG %}" alt="Image" />
+					   </a>
+					   </div>
+				   <div class="item">
+					   <a href="{% asset_path photog/17.JPG %}" data-toggle="lightbox" data-gallery="example-gallery">
+					     <img src="{% asset_path photog/17.JPG %}" alt="Image" />
+					   </a>
+					   </div>
+				</div>
 
 			</div>
 
-		  <div id="1"></div>
-		  <div id="1"></div>
-		  <div id="1"></div>
-		  <div id="1"></div>
-		  <div id="1"></div>
-		  
-
-
-        </div>
+        <!-- </div> -->
         <!-- /#page-content-wrapper -->
 
-    </div>
-    <!-- /#wrapper -->
+</div>
+<!-- /#wrapper -->
+<script>
+
+/*
+* Shuffle jQuery array of elements - see Fisher-Yates algorithm
+*/
+jQuery.fn.shuffle = function () {
+	console.log('er');
+    var j;
+    for (var i = 0; i < this.length; i++) {
+        j = Math.floor(Math.random() * this.length);
+        $(this[i]).before($(this[j]));
+    }
+    return this;
+};
+
+$(document).ready(function(){
+	
+	$('.masonry .item').shuffle();
+
+	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+	    event.preventDefault();
+	    $(this).ekkoLightbox();
+	});
+	
+	function shuffleImages() {
+		console.log('function runs ha');
+		var a = $('.masonry').children();
+		for (var i=0; i<a.length-1; i++){
+	    	var j = Math.floor(Math.random()*i);
+	    	var hold = a[j];
+	    	a[j] = a[i];
+	    	a[i] = hold;
+	    }
+	}
+
+});
+
+
+</script>
