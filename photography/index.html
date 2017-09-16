@@ -139,16 +139,15 @@ layout: bare
 					   </div>
 				   <div class="item">
 					   <a href="{% asset_path photog/17.JPG %}" data-toggle="lightbox" data-gallery="example-gallery">
-					     <img src="{% asset_path photog/17.JPG %}" alt="Image" />
+					     <img id="myImage" src="{% asset_path photog/17.JPG %}" alt="Image" />
 					   </a>
 					   </div>
-				</div>
+				</div><!--masonry-->
 
 			</div>
 
         <!-- </div> -->
         <!-- /#page-content-wrapper -->
-
 </div>
 <!-- /#wrapper -->
 <script>
@@ -168,23 +167,32 @@ jQuery.fn.shuffle = function () {
 
 $(document).ready(function(){
 	
+
 	$('.masonry .item').shuffle();
 
 	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
 	    event.preventDefault();
 	    $(this).ekkoLightbox();
 	});
+
+
+	// var canvas = document.getElementById('canvas');
+	// var img = document.getElementById('myImage');
+	// var ctx = canvas.getContext('2d');
+
+	// ctx.drawImage(img,0,0);
+	// var imgData=ctx.getImageData(0,0,canvas.width,canvas.height);
+	// console.log(imgData);
+ //    ctx.putImageData(imgData, 0, 0);
+
+
+	// $('#myImage').mousemove(function(e){
+	// 	var x = e.clientX;
+	// 	var y = e.clientY;
+
+	// 	$('#output').html('X pos: '+ x.toString()+'<br>Y pos: '+ y.toString());
 	
-	function shuffleImages() {
-		console.log('function runs ha');
-		var a = $('.masonry').children();
-		for (var i=0; i<a.length-1; i++){
-	    	var j = Math.floor(Math.random()*i);
-	    	var hold = a[j];
-	    	a[j] = a[i];
-	    	a[i] = hold;
-	    }
-	}
+	// });
 
 });
 

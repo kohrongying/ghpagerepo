@@ -3,7 +3,7 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -46,27 +46,45 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting",
-        "expt"
+        "syntax-highlighting"
 ;
 
 //Google Fonts
-@import url(https://fonts.googleapis.com/css?family=Open+Sans|Oswald);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Playfair+Display);
 
-//Font Variables
-//$open-sans:'Open Sans', sans-serif;
-//$oswald:'Oswald', sans-serif
-
-h1,h2,h3{
-	font-family:'Oswald', sans-serif;
+h1,h2,h3,h4,h5{
+	font-family:'Playfair Display';
 }
 
-.totest{
-	color:blue;
-	font-size: 50px;
+p {
+    font-family:'Open Sans';
 }
 
+.footer-col-custom {
+    color: white;
+    .fa {
+    	color: white;
+	    padding: 20px;
+	}
+}
 
+.contact-icons {
+	display: flex;
+	justify-content:flex-end;
+}
 
-
-
+.fa-github:hover {
+	background-color: black;
+}
+.fa-linkedin:hover {
+	background-color:#3395C3;
+}
+.fa-envelope:hover {
+	background-color: red;
+}
+.fa-pinterest-p:hover{
+	background-color: #BD081B;
+}
+.fa-instagram:hover{
+	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}

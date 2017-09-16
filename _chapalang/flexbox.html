@@ -15,139 +15,73 @@ overview: Just some simple Rules because I'm so stoopid
 {% endcontentfor%}
 
 <section>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-        <h3>Justify Content (justify-content)</h3>
-        <p>Align Items horizontally</p>
-        <form role="form" id='fb-justify-content'>
-          <label class="radio-inline">
-            <input type="radio" name="justify-content-opt" value='flex-start' data-balloon-length="medium" data-balloon="align to left side of container" data-balloon-pos="down">flex-start
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="justify-content-opt" value='flex-end' data-balloon-length="medium" data-balloon="align to right side of container" data-balloon-pos="down">flex-end
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="justify-content-opt" value='center' data-balloon-length="medium" data-balloon="align at center" data-balloon-pos="down">center
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="justify-content-opt" value='space-between' data-balloon-length="medium" data-balloon="items display with equal spacing between them" data-balloon-pos="down">space-between
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="justify-content-opt" value='space-around' data-balloon-length="medium" data-balloon="items display with equal spacing around them" data-balloon-pos="down">space-around
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="justify-content-opt" value='none' checked>none
-          </label>
-        </form>
-      </div>
-
-      <div class="col-md-6">
-        <h3>Align Items (align-items)</h3>
-        <p>Align Items vertically</p>
-        <form role="form" id='fb-align-items'>
-          <label class="radio-inline">
-            <input type="radio" name="align-items-opt" value='flex-start' data-balloon-length="medium" data-balloon="align to top of container" data-balloon-pos="down">flex-start
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="align-items-opt" value='flex-end' data-balloon="align to bottom of container" data-balloon-pos="down">flex-end
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="align-items-opt" value='center' data-balloon="align at vertical center of container" data-balloon-pos="down">center
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="align-items-opt" value='baseline' data-balloon="items display at baseline of container" data-balloon-pos="down">baseline
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="align-items-opt" value='stretch' data-balloon="items stretched to fit container" data-balloon-pos="down">stretch
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="align-items-opt" value='none' checked>none
-          </label>
-        </form>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-6">
-        <h3>Flex Direction (flex-direction)</h3>
-        <p>Defines direction the items are placed in container</p>
-        <form role="form" id='fb-flex-dir'>
-          <label class="radio-inline">
-            <input type="radio" name="flex-dir-opt" value='row' data-balloon-length="medium" data-balloon="left to right" data-balloon-pos="down">row
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="flex-dir-opt" value='row-reverse' data-balloon-length="medium" data-balloon="right to left" data-balloon-pos="down">row-reverse
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="flex-dir-opt" value='column' data-balloon-length="medium" data-balloon="top to bottom" data-balloon-pos="down">column
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="flex-dir-opt" value='column-reverse' data-balloon-length="medium" data-balloon="bottom to top" data-balloon-pos="down">column-reverse
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="flex-dir-opt" value='none' checked>none
-          </label>
-        </form>
-      </div>
-
-      <div class="col-md-6">
-        <h3>Flex Wrap (flex-wrap)</h3>
-        <p>Spread items out</p>
-        <form role="form" id='fb-flex-wrap'>
-          <label class="radio-inline">
-            <input type="radio" name="flex-wrap-opt" value='nowrap' data-balloon-length="medium" data-balloon="all items fit into a single line" data-balloon-pos="down">nowrap
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="flex-wrap-opt" value='flex-end' data-balloon="items wrap to additional lines" data-balloon-pos="down">wrap
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="flex-wrap-opt" value='center' data-balloon="wrap but reverse LA" data-balloon-pos="down">wrap reverse
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="flex-wrap-opt" value='none' checked>none
-          </label>
-        </form>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-6">
-        <h3>Align Content (align-content)</h3>
-        <p>How lines are spaced apart from each other (only works for >1 line</p>
-        <form role="form" id='fb-align-content'>
-          <label class="radio-inline">
-            <input type="radio" name="align-content-opt" value='flex-start' data-balloon-length="medium" data-balloon="lines packed at top of container" data-balloon-pos="down">flex-start
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="align-content-opt" value='flex-end' data-balloon-length="medium" data-balloon="lines packed at bottom of container" data-balloon-pos="down">flex-end
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="align-content-opt" value='center' data-balloon-length="medium" data-balloon="lines packed at vertical center of container" data-balloon-pos="down">center
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="align-content-opt" value='space-between' data-balloon-length="medium" data-balloon="lines display with equal spacing between them" data-balloon-pos="down">space-between
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="align-content-opt" value='space-around' data-balloon-length="medium" data-balloon="lines display with equal spacing around them" data-balloon-pos="down">space-around
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="align-content-opt" value='stretch' data-balloon-length="medium" data-balloon="lines stretched to fit container" data-balloon-pos="down">stretch
-          </label>
-          <label class="radio-inline">
-            <input type="radio" name="align-content-opt" value='none' checked>none
-          </label>
-        </form>
-      </div>
-    </div>
-
-    <div class="row expt-box" style="display:flex;">
-      <div class="circle"></div>
-      <div class="circle" id='green'></div>
-      <div class="circle" id='blue'></div>
-     <!--  <h3>Lorem Ipsum</h3>
-      <h3>Rubbish</h3> -->
-    </div>
-
-	</div>
+<div class='container'>
+<div class='fb-wrapper'>
+<div class='text-col'>
+<h3>Justify Content (justify-content)</h3>
+<p>Align Items horizontally</p>
+<form id='fb-justify-content' role='form'>
+<label class='radio-inline'><input data-balloon-length='medium' data-balloon-pos='down' data-balloon='align to left side of container' name='justify-content-opt' type='radio' value='flex-start'>flex-start</input></label>
+<label class='radio-inline'><input data-balloon-length='medium' data-balloon-pos='down' data-balloon='align to right side of container' name='justify-content-opt' type='radio' value='flex-end'>flex-end</input></label>
+<label class='radio-inline'><input data-balloon-length='medium' data-balloon-pos='down' data-balloon='align at center' name='justify-content-opt' type='radio' value='center'>center</input></label>
+<label class='radio-inline'><input data-balloon-length='medium' data-balloon-pos='down' data-balloon='items display with equal spacing between them' name='justify-content-opt' type='radio' value='space-between'>space-between</input></label>
+<label class='radio-inline'><input data-balloon-length='medium' data-balloon-pos='down' data-balloon='items display with equal spacing around them' name='justify-content-opt' type='radio' value='space-around'>space-around</input></label>
+<label class='radio-inline'><input checked='checked' name='justify-content-opt' type='radio' value='none'>none</input></label>
+</form>
+<h3>Align Items (align-items)</h3>
+<p>Align Items vertically</p>
+<form id='fb-align-items' role='form'>
+<label class='radio-inline'><input data-balloon-length='medium' data-balloon-pos='down' data-balloon='align to top of container' name='align-items-opt' type='radio' value='flex-start'>flex-start</input></label>
+<label class='radio-inline'><input data-balloon-pos='down' data-balloon='align to bottom of container' name='align-items-opt' type='radio' value='flex-end'>flex-end</input></label>
+<label class='radio-inline'><input data-balloon-pos='down' data-balloon='align at vertical center of container' name='align-items-opt' type='radio' value='center'>center</input></label>
+<label class='radio-inline'><input data-balloon-pos='down' data-balloon='items display at baseline of container' name='align-items-opt' type='radio' value='baseline'>baseline</input></label>
+<label class='radio-inline'><input data-balloon-pos='down' data-balloon='items stretched to fit container' name='align-items-opt' type='radio' value='stretch'>stretch</input></label>
+<label class='radio-inline'><input checked='checked' name='align-items-opt' type='radio' value='none'>none</input></label>
+</form>
+<h3>Flex Direction (flex-direction)</h3>
+<p>Defines direction the items are placed in container</p>
+<form id='fb-flex-dir' role='form'>
+<label class='radio-inline'><input data-balloon-length='medium' data-balloon-pos='down' data-balloon='left to right' name='flex-dir-opt' type='radio' value='row'>row</input></label>
+<label class='radio-inline'><input data-balloon-length='medium' data-balloon-pos='down' data-balloon='right to left' name='flex-dir-opt' type='radio' value='row-reverse'>row-reverse</input></label>
+<label class='radio-inline'><input data-balloon-length='medium' data-balloon-pos='down' data-balloon='top to bottom' name='flex-dir-opt' type='radio' value='column'>column</input></label>
+<label class='radio-inline'><input data-balloon-length='medium' data-balloon-pos='down' data-balloon='bottom to top' name='flex-dir-opt' type='radio' value='column-reverse'>column-reverse</input></label>
+<label class='radio-inline'><input checked='checked' name='flex-dir-opt' type='radio' value='none'>none</input></label>
+</form>
+<h3>Flex Wrap (flex-wrap)</h3>
+<p>Spread items out</p>
+<form id='fb-flex-wrap' role='form'>
+<label class='radio-inline'><input data-balloon-length='medium' data-balloon-pos='down' data-balloon='all items fit into a single line' name='flex-wrap-opt' type='radio' value='nowrap'>nowrap</input></label>
+<label class='radio-inline'><input data-balloon-pos='down' data-balloon='items wrap to additional lines' name='flex-wrap-opt' type='radio' value='flex-end'>wrap</input></label>
+<label class='radio-inline'><input data-balloon-pos='down' data-balloon='wrap but reverse LA' name='flex-wrap-opt' type='radio' value='center'>wrap reverse</input></label>
+<label class='radio-inline'><input checked='checked' name='flex-wrap-opt' type='radio' value='none'>none</input></label>
+</form>
+<h3>Align Content (align-content)</h3>
+<p>How lines are spaced apart from each other (only works for &gt;1 line</p>
+<form id='fb-align-content' role='form'>
+<label class='radio-inline'><input data-balloon-length='medium' data-balloon-pos='down' data-balloon='lines packed at top of container' name='align-content-opt' type='radio' value='flex-start'>flex-start</input></label>
+<label class='radio-inline'><input data-balloon-length='medium' data-balloon-pos='down' data-balloon='lines packed at bottom of container' name='align-content-opt' type='radio' value='flex-end'>flex-end</input></label>
+<label class='radio-inline'><input data-balloon-length='medium' data-balloon-pos='down' data-balloon='lines packed at vertical center of container' name='align-content-opt' type='radio' value='center'>center</input></label>
+<label class='radio-inline'><input data-balloon-length='medium' data-balloon-pos='down' data-balloon='lines display with equal spacing between them' name='align-content-opt' type='radio' value='space-between'>space-between</input></label>
+<label class='radio-inline'><input data-balloon-length='medium' data-balloon-pos='down' data-balloon='lines display with equal spacing around them' name='align-content-opt' type='radio' value='space-around'>space-around</input></label>
+<label class='radio-inline'><input data-balloon-length='medium' data-balloon-pos='down' data-balloon='lines stretched to fit container' name='align-content-opt' type='radio' value='stretch'>stretch</input></label>
+<label class='radio-inline'><input checked='checked' name='align-content-opt' type='radio' value='none'>none</input></label>
+</form>
+</div>
+<div class='show-col expt-box' style='display:flex;'>
+<div class='circle'></div>
+<div class='circle' id='green'></div>
+<div class='circle' id='blue'></div>
+</div>
+<div class='display-col'>
+<span>.expt-box {</span>
+<span id="display">display: flex;</span>
+<span id='justify-content'></span>
+<span id='align-items'></span>
+<span id='flex-direction'></span>
+<span id='flex-wrap'></span>
+<span id='align-content'></span>
+<span>}</span>
+</div>
+</div>
+</div>
 </section>

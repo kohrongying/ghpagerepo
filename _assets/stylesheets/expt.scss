@@ -1,16 +1,20 @@
 @import "bootstrap";
 
-*,
-*::before,
-*::after {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+// *,
+// *::before,
+// *::after {
+//     -webkit-box-sizing: border-box;
+//        -moz-box-sizing: border-box;
+//             box-sizing: border-box;
+// }
+
+h1,h2,h3,h4,h5{
+  font-family:'Playfair Display';
 }
 
 //expt 
 section.header-title{
-  background:black;
+  background: linear-gradient(128deg, #3aba99, #523aba);
   h1,p {
     color:white;
     text-align: center;
@@ -18,11 +22,47 @@ section.header-title{
 }
 
 //flexbox
+
+.fb-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  grid-auto-rows: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.text-col {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border-right: 2px solid;
+  padding-right: 30px;
+}
+
+.show-col {
+  grid-row-start: 1;
+  grid-row-end:2;
+  grid-column-start: 2;
+}
+
+.display-col {
+  padding: 50px;
+  grid-row-start: 2;
+  grid-row-end:3;
+  grid-column-start: 2;
+}
+
+.display-col span {
+  display: block;
+  font-family: 'Open Sans'
+}
+
+.display-col span#justify-content, span#align-items, span#flex-direction,span#flex-wrap, span#align-content, span#display {
+  padding-left: 10px;
+}
+
 .expt-box {
-  background:#FAFDC3;
-  height:200px;
   padding: 10px;
-  margin-top:50px;
 
   .circle {
     width:25px;

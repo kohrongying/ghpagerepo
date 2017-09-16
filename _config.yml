@@ -9,20 +9,15 @@
 # You’ll need to kill and rerun jekyll serve.
 
 # Site settings
-title: Site Under Construction
+title: The Rong Things
 email: kohrongying@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  I like simple things and I am a tad bit weird. Just a tad bit. 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: rongzx
 github_username:  kohrongying
 linkedin_username: rongyingkoh
 instagram_username: kickrongying
 pinterest_username: kohrongying
-facebook_username: rongying.koh 
 
 # Build settings
 markdown: kramdown

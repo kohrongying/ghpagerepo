@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
+    // border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
@@ -17,6 +17,7 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    font-family: 'Oswald';
 
     &,
     &:visited {
@@ -35,7 +36,7 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
-
+        font-family: 'Open Sans';
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
             margin-right: 20px;
@@ -83,7 +84,7 @@
         .page-link {
             display: block;
             padding: 5px 10px;
-
+            font-family: 'Open Sans';
             &:not(:last-child) {
                 margin-right: 0;
             }
@@ -100,19 +101,16 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    background-color: gray;
 }
 
 .footer-heading {
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
+    font-family: 'Oswald';
 }
 
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-}
-
+.contact-list
 .footer-col-wrapper {
     font-size: 15px;
     color: $grey-color;
@@ -169,6 +167,8 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+
+    flex: 1 0 auto;
 }
 
 .page-heading {
