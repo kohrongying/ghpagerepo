@@ -7,7 +7,7 @@ group :jekyll_plugins do
 end
 
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
-gem 'bootstrap-sass', '~> 3.3.6'
+# gem 'bootstrap', '~> 4.0.0.beta'
 # gem "uglifier", :require => false
 # gem "sprockets-es6", "~> 0.6", :require => false
 # gem "autoprefixer-rails", "~> 6.0", :require => false

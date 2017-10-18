@@ -1,8 +1,42 @@
 ---
-layout: default
-permalink: /404.html
----
 
-<div class="error">
-	<p>Nothing in Life is an error. Thanks for stumbling by. :) </p>
-</div>
+layout: bare
+permalink: /404.html
+
+---
+{% contentfor scripts %}
+  {% stylesheet 404 %}
+{% endcontentfor %}
+
+
+<header class="site-header">
+    <nav class="navbar sticky-top navbar-toggleable-md navbar-light mynavbar">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+          {% for my_page in site.pages %}
+               {% if my_page.title %}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            </li>
+            {% endif %}
+          {% endfor %}
+
+          </ul>
+
+        </div>
+      </nav>
+
+
+      <div class="error text-center">
+		<div>
+			<h3>Nothing in Life is an error. Thanks for stumbling by. :)</h3>
+		</div>
+	</div>
+
+  </header>

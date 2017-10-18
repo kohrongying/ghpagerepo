@@ -44,7 +44,7 @@ sass:
 
 excerpt_separator: "<!-- more -->"
 
-gems: 
+plugins: 
   - jekyll-contentblocks
   - jekyll-assets
 

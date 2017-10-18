@@ -1,281 +1,207 @@
-$teal:#2fc6bf;
-$orange:#eaaa2a;
-$grey:#6e7271;
-
-html {
-	overflow-x:hidden;
+body {
+	margin-bottom: 0;
 }
 
-@mixin header-style($color) {
-	border-left: 15px solid $color;
-	padding-left: 15px;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	font-size: 30px;
-}
+$dark-blue:rgb(31,78,121);
+$light-blue:#6DBBEB;
 
-@mixin makesmaller() {
-	-webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.hover6 { 
-    position: relative; 
-    color: white; 
-    background: transparent; 
-    padding: 15px 20px; 
-    font-size: 14px; 
-    letter-spacing: 1px; 
-    text-align: center; 
-    cursor: pointer; 
-    -webkit-transition: all ease 0.3s; -moz-transition: all ease 0.3s; transition: all ease 0.3s; 
-
-	&:after { 
-	    display: block; 
-	    position: absolute; 
-	    left: 0; 
-	    bottom: 2px; 
-	    width: 0; 
-	    height: 2px; 
-	    background-color: white; 
-	    content: ""; transition: width 0.2s; 
+section#hello {
+	
+	background-image: url(asset_path("portfolio/cover.jpg"));
+	background-size: cover;
+	box-shadow:inset 0 0 0 2000px rgba(31,78,121,0.8);
+	height: 80vh;
+	.container,.row{
+		height: inherit;
+	}
+	.hello-text {
+		color: white;
+		display: flex;
+		align-items: center;
+		height: inherit;
 	}
 }
 
-.hover6:hover { 
-    color: white; 
+section#aboutme {
+	background-color: beige;
 
-	&:after { 
-	    width: 100%;
+	.aboutme-img-col {
+		display: flex;
+		align-items: center;
+	}
+	.aboutme-img {
+		padding: 100px;
+	}
+	#img-border {
+		min-height: 340px;
+		min-width: 340px;
+		position: absolute;
+		border: 2px solid;
+		top:80px;
+		right:80px;
+		z-index: -1;
+	}
+	.aboutme-text {
+		padding-top: 200px;
+		padding-bottom: 200px;
 	}
 }
 
-.bg {
-	background-image: url(asset_path("homebg1.jpeg"));
-	/* Full height */
-    height: 100vh; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.section-title {
+	border-bottom: 1px solid;
+	padding: 10px;
 }
 
-/*Header*/
-
-header {
-    width: 100%;
-    // height: 150px;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    background-color: transparent;
-    @include makesmaller();
-    
-    span#logo {
-    	@include makesmaller();
-	    display: inline-block;
-	    height: 120px;
-	    line-height: 120px;
-	    float: left;
-	    width: 30%;
-	}
-	nav {
-	    display: inline-block;
-	    float: right;
-
-	    a {
-	    	@include makesmaller();
-	    	line-height: 120px;
-		    margin-left: 20px;
-		    color: white;
-		    font-weight: 700;
-		    font-size: 18px;
-		    &:hover {
-		    	text-decoration:none;
-		    }
-		    &:visited {
-		    	color:white;
-		    }
-	    }
-	}
-}
-
-header.smaller {
-	background:black;
-    height: 70px;
-
-    span#logo {
-    	width: 22%;
-    	padding: 5px;
-	    height: 70px;
-	    line-height: 70px;
-	    
-    }
-    nav a {
-	    line-height: 70px;
-	}
-}
-
-@media all and (max-width: 660px) {
-    header span#logo {
-        display: block;
-        float: none;
-        margin: 0 auto;
-        height: 100px;
-        line-height: 100px;
-        text-align: center;
-    }
-    header nav {
-        display: block;
-        float: none;
-        height: 50px;
-        text-align: center;
-        margin: 0 auto;
-    }
-    header nav a {
-        line-height: 50px;
-        margin: 0 10px;
-    }
-    header.smaller {
-        height: 75px;
-    }
-    header.smaller span#logo {
-        height: 40px;
-        line-height: 40px;
-        font-size: 30px;
-    }
-    header.smaller nav {
-        height: 35px;
-    }
-    header.smaller nav a {
-        line-height: 35px;
-    }
-}
-
-.section-heading {
-	padding-top: 80px;
-	padding-bottom: 50px;
-
-	span {
-		@include header-style($teal);
-	}
-}
-
-// section#skills,#projects,#resume,#contact,#aboutme,#interests {
-// 	padding-top:80px;
-// }
-section#projects {
-	padding-bottom: 80px;
-}
-
-section#resume {
-	padding: 100px;
-	text-align: center;
-	font-size: 30px;
-
-	a {
+section#work {
+	background-color: $dark-blue;
+	.work-col {
+		padding-top: 100px;
+		padding-bottom: 100px;
 		color: white;
 	}
+
+	.work-text {
+		background-color: $light-blue;
+		padding: 20px;
+		height: 430px;
+
+		display: flex;
+		align-items:flex-end;
+		justify-content:center;
+
+	}
+	.work-img {
+		margin-bottom: 30px;
+	}
 }
 
-section#resume,#contact,#workexperience {
-	background-color: $grey;
-	color: white;
+@media screen and (max-width:768px) {
+	.proj-col {
+		min-width: 100%;
+	}
 }
 
-h1.title-custom {
-	font-size:80px;
-	font-weight:700;
-	color:white;
-	position:relative;
-	text-align:left;
+@media screen and (min-width:768px) and (max-width:992px) {
+	.proj-col {
+		min-width: 50%;
+	}
 }
 
-h1.title-custom:after {
-	content:'HELLO';
-	position: absolute; left:5px; top:5px;
-	color:$grey;
+@media screen and (min-width:992px) {
+	.proj-col {
+		min-width: 33.333%;
+		display: inline-block;
+	}
 }
 
-.education {
-	padding-top: 80px;
-	width: 100%;
-}
 
-.work {
-	padding-bottom: 80px;
-}
+section#projects {
+	background-color: $dark-blue;
+	padding-bottom: 100px;
+	.proj-col{
+		padding-right:15px;
+		padding-left:15px;
+	}
+	.project-heading {
+		margin-top: 30px;
+		background-color: $light-blue;
+		color: white;
+		padding: 20px;
+		height: 430px;
 
-section#skills {
-	padding-bottom:80px;
-	background-color: $teal;
-	
-	.section-heading {
-		padding-bottom:0;
-		span {
-			@include header-style(white);
+		display: flex;
+		align-items:flex-end;
+		justify-content:center;
+	}
+	.project-text {
+		position: relative;
+		background-color: white;
+		color:black;
+		padding: 30px;
+		display: flex;
+		align-items:center;
+		justify-content: center;
+		height: 300px;
+		visibility: visible;
+		opacity: 1;
+		transition: all 0.5s ease;
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+	.project-description {
+		position: absolute;
+		// margin-bottom: 0;
+		// bottom:0;
+		top: 70px;
+		left: 0;
+		right: 0;
+		height: 230px;
+		background: $light-blue;
+		color: #fff;
+		visibility: hidden;
+		opacity: 0;
+		padding: 30px;
+
+		/* transition effect. not necessary */
+		transition: opacity .2s, visibility .2s;
+	}
+
+	.project-text:hover{
+
+		align-items:flex-start;
+
+		.project-description {
+		  visibility: visible;
+		  opacity: 1;
 		}
 	}
-	.myskills{
-		background-image: url(asset_path("portfolio/cubes.png"));
-	    background-position: center;
-	    background-repeat: no-repeat;
-	    background-size: contain;
+	
+}
+
+section#animation {
+	padding-top: 250px;
+	padding-bottom: 250px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+
+	.resume-col{
+		position: absolute;
+		bottom: -70px;
+		padding: 50px;
+		background-color: #3d3d3d;
+		color: white;
+		border: 2px solid;
+		h3{
+			margin-bottom: 0;
+		}
 	}
 }
 
-section#interests {
-	background-image: url(asset_path("portfolio/img2.jpg"));
-	padding: 80px;
-	box-shadow:inset 0 0 0 200px rgba(0,0,150,0.3);
-
-	.interests-heading h1{
-		color:white;
-		font-size: 56px;
-	}
-
-	a {
-		margin-top: 20px;
-		text-decoration: none;
-	}
+.parallax-bg { 
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: url(asset_path("portfolio/sutd.jpg"));
+	box-shadow:inset 0 0 0 2000px rgba(10,10,10,0.5);
 }
 
-.parallax {
-	height:400px;
-	background-size:cover; /*forces the background image to occupy the total available space by expanding it proportionally*/
-	background-attachment: fixed; /*fixes the bakcground while content scrolls past it*/
-	background-repeat:no-repeat; /*not really necessary*/
-}
+section#footer {
+	background-color: #3d3d3d;
+	padding: 100px;
 
-.fa {
-    padding: 20px;
-    width: 80px;
-    color: white;
-}
-
-.fa-github:hover {
-	background-color: black;
-}
-.fa-linkedin:hover {
-	background-color:#3395C3;
-}
-.fa-envelope-o:hover {
-	background-color: red;
-}
-
-section#contact {
-	.icons {
+	.footer-col-custom{
 		display: flex;
-		justify-content: flex-end;
+		align-items:center;
+		justify-content: center;
 	}
 }
+
+section#copyright {
+	background-color: black;
+
+	p {
+		margin-bottom: 0;
+		margin-top: 0;
+		color:white
+	}
+} 

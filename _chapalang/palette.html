@@ -1,13 +1,9 @@
 ---
-layout: workspace
+layout: default
 title: Colour Palette
 overview: Select RBG or Hex. Click on colour to copy to clipboard.
 ---
 {% contentfor scripts %}
-    <!-- each page's unique css -->
-    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.3.0/balloon.min.css">
 
     {% stylesheet expt %}
     {% javascript chapalang/palette.scripts %}
@@ -16,9 +12,9 @@ overview: Select RBG or Hex. Click on colour to copy to clipboard.
     
 {% endcontentfor%}
 
-<section style="background:#aaa;padding:10px;">
+<section id="radiobtn-form">
   <div class="container">
-    <div class="row" style="text-align:center;">
+    <div class="row">
       <form role="form" class='rbg-or-hex' id='rgb-or-hex'>
         <label class="radio-inline">
           <input type="radio" name="optradio" id='rgb-radiobtn' value='rgb'>REDGREENBLUE!
@@ -30,7 +26,7 @@ overview: Select RBG or Hex. Click on colour to copy to clipboard.
 
     </div>
     <div class="row" style="text-align:center;">
-      You selected: <p id="radiobtn-ans"></p>
+      <p>You selected: </p><span id="radiobtn-ans"></span>
     </div>
   </div>
 </section>

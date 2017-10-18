@@ -1,12 +1,44 @@
 ---
-layout: page
+
+layout: default
 title: Chapalang
+
 ---
-    
-{% for chapalang in site.chapalang %}
-  <div class="container">
-    <div class="row">
-      <h2><a href="{{ chapalang.url }}">{{ chapalang.title }}</a></h2>
-    </div>
-  </div>
-{% endfor %}
+
+{% contentfor scripts %}
+  {% stylesheet chapalang %}
+{% endcontentfor %}
+
+<div class="container">
+	<div class="row cards-row">
+	
+	{% for chapalang in site.chapalang %}
+		<div class="col-md-4">
+		<div class="card">
+
+	  		<div class="card-block">
+	  	
+			    <a href="{{ chapalang.url }}"><h4 class="card-title">{{ chapalang.title }}</h4></a>
+			    
+			    <p class="card-text">{{ chapalang.overview }}</p>
+			    
+		  	</div>
+	  
+		</div>
+		</div>
+	{% endfor %}
+		<div class="col-md-4">
+			<div class="card">
+		  		<div class="card-block">
+				    <a href="https://kohrongying.github.io/custom-lettering-guides/"><h4 class="card-title">Custom Lettering Guides</h4></a>
+				    
+				    <p class="card-text">Customize lettering sheets by specifying line height, thickness and angle.</p>
+				</div>
+			</div>
+		</div>
+		
+
+	</div>
+
+</div>
+

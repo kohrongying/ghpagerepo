@@ -9,7 +9,7 @@ layout: bare
     {% javascript portfolio/scripts %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 {% endcontentfor %}
-<header>
+<!-- <header>
 	<div class="container clearfix">
         <div class="col-md-8 col-sm-12">
         <nav>
@@ -19,48 +19,113 @@ layout: bare
         </nav>
         </div>
     </div>
-</header>
+</header> -->
 
-<div id="hello">
-	<div class="bg">
-		<div class="row" style="display: flex; flex-direction: column; align-items: center;">
-			<h1 class="title-custom">HELLO</h1>
-			<p>Page is still under massive construction. If you want to reach me, you wouldn't even be here lol.</p>
-			
-
-		</div>
-		<!-- <h1 class="title-custom">My Name is Rong Ying.</h1> -->
+<body>
+<section id='hello'>
+<div class='container'>
+<div class='row'>
+<div class='col-md-6'></div>
+<div class='col-md-6 hello-text'>
+<h1>Hello there. Thank you for stumbling by.</h1>
+</div>
+</div>
+</div>
+</section>
+<section id='aboutme'>
+<div class='container'>
+<div class='row aboutme-img-col'>
+<div class='col-md-6'>
+	<div class='aboutme-img'>
+	<div id='img-border'></div>
+	<img class='img-fluid' src="{% asset_path portfolio/me.jpg %}">
 	</div>
 </div>
+<div class='col-md-6'>
+<div class='aboutme-text text-right'>
+<h3>about me</h3>
+<p>I’m a 22 year old aspiring developer from the lil red dot called Singapore. I pioneered in a double degree programme from 2014 to 2018 in SUTD (Information Systems) and SMU (Business Administration)</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id='work'>
+<div class='container'>
+<div class='row'>
+<div class='col-md-4 work-col'>
+<div class='work-text'>
+<h3 class='text-center'>Work Experience</h3>
+</div>
+</div>
+<div class='col-md-4 work-col'>
+<img class='img-fluid work-img' src="{% asset_path portfolio/work.jpg %}">
 
-<!-- <section id="aboutme">
-	<div class="container">
-		<div class="row" style="padding-top: 50px; padding-bottom: 50px;">
-			<img class="img-responsive" src="{% asset_path portfolio/aboutv3.png %}" style="width:20%;" alt="EducationBackground" />
-		</div>
-		<div class="row" style="padding-top: 50px; padding-bottom: 50px;">
-			<div class="col-md-4">
-			<img src="http://via.placeholder.com/350x350">
-			</div>
-			<div class="col-md-4">
-			<img src="http://via.placeholder.com/350x350">
-			</div>
-			<div class="col-md-4">
-			<img src="http://via.placeholder.com/350x350">
-			</div>
-		</div>
-	</div>
+<h3>Websparks PHP Intern</h3>
+<p>May to Aug 2016</p>
+<p>Assisted in developing of menu component using JS, HTML5/CSS3; managed migration of websites; conducted UAT and contributed to the documentation for user guides</p>
+</div>
+<div class='col-md-4 work-col'>
+<img class='img-fluid work-img' src='{% asset_path portfolio/work2.jpg %}'>
+<h3>PUB Intern</h3>
+<p>Jan - Feb 2014</p>
+<p>Conducted research on a project relating to internal water reticulation system, then presented findings and recommendations to the department supervisor in 4 weeks</p>
+</div>
+</div>
+</div>
+</section>
+<section id='projects'>
+<div class='container'>
+<div class='row'>
+<div class='col-md-4'>
+<div class='project-text'>
+<h4 class='project-title'>Final Year Project</h4>
+<p class='project-description'>Contributed as a full-stack developer for my team in my final year project. In-charge of conceptualization of the interface, deployment, testing, creating API.</p>
+</div>
+<div class='project-text'>
+<h4 class='project-title'>Analytics Edge</h4>
+<p class='project-description'>Analysed dataset using R and Python Libraries. Experimented with various models such as the MLogit Model, Random Forests, Gradient Boosting Classifier, and got 4th place in our cohort competition.</p>
+</div>
+</div>
+<div class='col-md-4'>
+<div class='project-text'>
+<h4 class='project-title'>Machine Learning</h4>
+<p class='project-description'>Implemented a sentiment analysis system and trained a sequence labelling model for tweets using Hidden Markov Model and Viterbi algorithm in order to predict tag sequences for new systems</p>
+</div>
+<div class='project-text'>
+<h4 class='project-title'>Database Project</h4>
+<p class='project-description'>Implemented a bookstore web application using Flask (a Python Microframework), PostgreSQL and SQLAlchemy (Python SQL Toolkit and ORM)</p>
+</div>
+</div>
+<div class='col-md-4'>
+<div class='project-heading'>
+<h3>Projects</h3>
+</div>
+</div>
+</div>
+</div>
 </section>
 
-<section id="test" style="background: #999">
-	<div class="container">
-		<div class="row" style="padding-top: 50px; padding-bottom: 50px;">
-			<div class='col-md-4'>
-				<img class="img-responsive" src="{% asset_path portfolio/aboutv2.png %}" style="width:20%;" alt="EducationBackground" />
-			</div>
-			<div class='col-md-8'>
-				<p style='color:white;'>Lorem Ipsum</p>
-			</div>
-		</div>
+<section class='parallax-bg' id='animation'>
+<div class='resume-col'>
+<h3>Say Hi</h3>
+</div>
+</section>
+
+<section id='footer'>
+
+	<div class="row footer-col-custom">
+
+      <a href="https://github.com/kohrongying" target="_blank"><i class="fa fa-2x fa-github" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/rongyingkoh/" target="_blank"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a>
+      <a href="mailto:kohrongying@gmail.com" target="_blank"><i class="fa fa-2x fa-envelope" aria-hidden="true"></i></a>
+      <a href="https://www.pinterest.com/kohrongying" target="_blank"><i class="fa fa-2x fa-pinterest-p" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/kickrongying" target="_blank"><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a>
+         
 	</div>
-</section> -->
+
+</section>
+<section id='copyright' style='background-color: black;'>
+	<p class='text-center'>Copyright 2017; Koh Rong Ying</p>
+</section>
+</body>

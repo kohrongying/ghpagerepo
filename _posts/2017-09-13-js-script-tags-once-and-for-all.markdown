@@ -15,7 +15,7 @@ Places where I can include javascript:
 
 So a simle illustration done in powerpoint. I don't even know why I did it LOL. Hope it helps future me. 
 
-![Some Image](/assets/posts/001.JPG){:class="img-responsive"}
+![Some Image](/assets/posts/001.JPG){:class="img-fluid"}
 
 Things I feel I should already know:
 - Scripts are downloaded in parallel but executed sequentially
@@ -23,7 +23,7 @@ Things I feel I should already know:
 - `defer` means to wait for the parser to finish to execute this. Equiavalent to using jQuery.ready, so the code runs when everything in the DOM is available. code with defer will run after HTML is fully parsed.
 - `integrity` tag with a hash value, verifies that you're loading a script from a credible third party.
 
-![Some Image](/assets/posts/002.JPG){:class="img-responsive"}
+![Some Image](/assets/posts/002.JPG){:class="img-fluid"}
 
 Recommendations/Lessons:
 - Library scripts like jQuery in head

@@ -1,15 +1,35 @@
 ---
-layout: landing
+layout: bare
 ---
 {% contentfor scripts %}
   {% stylesheet landing %}
 {% endcontentfor %}
 
-<div class="bg">
-  <div class="caption">
-    <span class="border">HELLO</span>
-    <br>
-    <br>
-    <span class="border">THANK YOU FOR STUMBLING BY!</span>
+<section class="bg">
+  <div class="container">
+  	<div class="row intro">
+  		<span class="intro__caption">
+  			Hello. You're at the
+  		</span>
+  		<br>
+  	</div>
+
+
+    <div class="row intro">
+      <span class="intro__caption">
+        Rong place
+      </span>
+    </div>
+
+    <div class="row intro">
+      <div class="intro__links">
+        {% for my_page in site.pages %}
+            {% if my_page.title %}
+            <a class="intro__page-link hvr-underline-from-center" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            {% endif %}
+          {% endfor %}
+      </div>
+    </div>
+
   </div>
-</div>
+</section>
