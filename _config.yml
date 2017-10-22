@@ -54,6 +54,7 @@ plugins:
   - jekyll-assets
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-haml
 
 assets:
   autowrite: true
