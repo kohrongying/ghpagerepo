@@ -234,6 +234,7 @@ DEPENDENCIES
   github-pages
   jekyll-assets
   jekyll-contentblocks
+  jekyll-seo-tag
   wdm (>= 0.1.0)
 
 BUNDLED WITH

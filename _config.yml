@@ -14,10 +14,15 @@ email: kohrongying@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   I like simple things and I am a tad bit weird. Just a tad bit. 
 baseurl: "" # the subpath of your site, e.g. /blog
-github_username:  kohrongying
-linkedin_username: rongyingkoh
-instagram_username: kickrongying
-pinterest_username: kohrongying
+author: Koh Rong Ying
+
+social: 
+  name: Rong Ying
+  links:
+    - https://github.com/kohrongying
+    - https://www.instagram.com/kickrongying
+    - https://www.linkedin.com/in/rongyingkoh/
+    - https://www.pinterest.com/kohrongying
 
 # Build settings
 markdown: kramdown
@@ -47,6 +52,8 @@ excerpt_separator: "<!-- more -->"
 plugins: 
   - jekyll-contentblocks
   - jekyll-assets
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 assets:
   autowrite: true
