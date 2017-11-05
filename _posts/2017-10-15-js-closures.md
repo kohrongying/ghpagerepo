@@ -78,3 +78,7 @@ And today I found out about function declaration `function init()` vs function e
 And I'm going to START USING LET AND CONST, BYEBYE VAR. And hello you sexy arrow =>. Meet smiley =). 
 
 IIFE is termed as Immediately Invoked Function Expression.
+
+Because of [this!](https://medium.com/coderbyte/a-tricky-javascript-interview-question-asked-by-google-and-amazon-48d212890703)
+
+This is left hanging sorray.
